@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Variables */
+:root {
+   --primary-color: #1d1d1f;
+   --secondary-color: #0171e3;
+   --secondary-color-06: #2997ff0f;
+   --white-color: #fff;
+   --black-color: #000;
+   --light-border: #2d2d2d;
+   --box-bg: #151517;
+   --lighter-grey: #f8f8f8b2;
+   --secondary-white-gradient: linear-gradient(91.29deg,
+         #2997ff 1.83%,
+         #f9ffef 98.9%);
+   --grey-gradient: linear-gradient(142.89deg, #FFFFFF 18.17%, rgba(255, 255, 255, 0) 152.61%);
+   --grey-color: #828282;
+   --rating-star-bg: #00b67a;
+   --footer-link-clr: #a1a1a6;
+   --light-grey: #6e6e73;
+   --light-black-color: #696969;
+   --light-black: #f5f5f7;
+   --card-color: #b5b5b5;
+   --border-x-lighter: #1e1e20;
+   --footer-secondary-fonts: #2997FF;
+}
+
+body {
+   background-color: var(--box-bg);
+   font-size: 14px;
+   font-family: SfRegular;
+   scroll-behavior: smooth;
+}
+
+html,
+body {
+   overflow-x: hidden;
+   overflow-y: auto;
+}
+
+/* Fonts */
+@font-face {
+   font-family: SfRegular;
+   src: url("../src/assets/font/SFProText-Regular.ttf");
+}
+
+@font-face {
+   font-family: SfMedium;
+   src: url("../src/assets/font/SFProText-Medium.ttf");
+}
+
+@font-face {
+   font-family: SfSemibold;
+   src: url("../src/assets/font/SFProText-Semibold.ttf");
+}
+
+@font-face {
+   font-family: SfBold;
+   src: url("../src/assets/font/SFProText-Bold.ttf");
+}
+
+@font-face {
+   font-family: GeistRegular;
+   src: url("../src/assets/font/Geist-Regular-BF6569491e3eff1.otf");
+}
+
+@font-face {
+   font-family: GeistMedium;
+   src: url("../src/assets/font/Geist-Medium-BF6569491e1c281.otf");
+}
+
+@font-face {
+   font-family: GeistSemibold;
+   src: url("../src/assets/font/Geist-SemiBold-BF6569491e8c368.otf");
+}
+
+@font-face {
+   font-family: GeistBold;
+   src: url("../src/assets/font/Geist-Bold-BF6569491da5a14.otf");
+}
+
+.font-roboto {
+   font-family: "Roboto", sans-serif;
+}
+
+.caveat-brush-regular {
+   font-family: "Caveat Brush", cursive;
+   font-weight: 400;
+   font-style: normal;
+}
+
+.font-sf-regular {
+   font-family: SfRegular;
+}
+
+.font-sf-medium {
+   font-family: SfMedium;
+}
+
+.font-sf-semibold {
+   font-family: SfSemibold;
+}
+
+.font-sf-bold {
+   font-family: SfBold;
+}
+
+.font-ge-regular {
+   font-family: GeistRegular;
+}
+
+.font-ge-medium {
+   font-family: GeistMedium;
+}
+
+.font-ge-semibold {
+   font-family: GeistSemibold;
+}
+
+.font-ge-bold {
+   font-family: GeistBold;
+}
+
+.square-shape-bg {
+   background-image: url(../public/static/img/transparent-bg.png);
+}
+
+.secondary-white-gradient {
+   background: var(--secondary-white-gradient);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.grey-gradient {
+   background: var(--grey-gradient);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.infrastructure-bg,
+.hero-bg {
+   background-image: url(../public/static/img/infrastructure-bg.png);
+}
+
+.custom-text-shadow {
+   text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.7);
+}
+
+.card-box {
+   background: linear-gradient(180deg, #1c1c1c 0%, rgba(28, 28, 28, 0) 100%);
+}
+
+.rfm-marquee-container {
+   overflow: hidden;
+}
+
+/* 21-08 */
+.benefit-box,
+.high-performance-bg,
+.square-shape-bg {
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+}
+
+.benefit-box1 {
+   background-image: url(../public/static/img/benefits/card-1.png);
+}
+
+.benefit-box2 {
+   background-image: url(../public/static/img/benefits/card-2.png);
+}
+
+.benefit-box3 {
+   background-image: url(../public/static/img/benefits/card-3.png);
+}
+
+.benefit-box4 {
+   background-image: url(../public/static/img/benefits/card-4.png);
+}
+
+.high-performance-bg {
+   background-image: url(../public/static/img/high-perf.png);
+}
+
+.custom-box-shadow {
+   /* box-shadow: 0px 5.99px 11.98px 0px #ffffff1f inset,
+      0px 1px 1px 0px #ffffff33 inset, 0px 3.99px 3.99px 0px #08080814,
+      0px 1px 2px 0px #08080833; */
+   box-shadow: 0px 1px 1px 0px #FFFFFF33 inset;
+
+}
+
+.faq-border {
+   @apply relative mb-4 before:content-[''] before:absolute before:inset-0 before:rounded-xl before:p-[1px];
+
+   &:before {
+      background: linear-gradient(180deg,
+            rgba(255, 255, 255, 0.19) 0%,
+            rgba(239, 239, 239, 0.0152) 100%);
+      -webkit-mask: linear-gradient(#fff 0 0) content-box,
+         linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      border-radius: 8px;
+   }
+}
+
+input:focus-visible {
+   outline: 0;
+}
